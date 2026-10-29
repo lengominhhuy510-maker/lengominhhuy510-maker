@@ -3,7 +3,7 @@
 **Final-year Logistics and Supply Chain Management**
 
 <a href="https://github.com/lengominhhuy510-maker/Tracking-Shipment-webapp">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=22&pause=1200&color=2563EB&width=680&lines=Interested+in+digital+supply+chain;Applying+AI+automation+to+everyday+operations;Self-learning%2C+one+small+project+at+a+time;Curious+about+what+can+be+automated" alt="Focus areas" />
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=22&pause=1200&color=2563EB&width=680&lines=Interested+in+digital+supply+chain;Applying+AI+automation+to+everyday+operations;Learn+first%2C+build+second;Small+steps%2C+real+systems" alt="Focus areas" />
 </a>
 
 ---
