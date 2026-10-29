@@ -18,7 +18,7 @@ Not an expert in either. Still reading, still building small things, still check
 |---|---|
 | **[Tracking-Shipment-webapp](https://github.com/lengominhhuy510-maker/Tracking-Shipment-webapp)** | Manual shipment lookup took 11.2 minutes per container, measured with a stopwatch across four to five separate sources. Can live vessel tracking plus AI-read carrier emails bring that under one minute, without letting a machine overwrite an operational record unsupervised? Built as a post-sales monitoring add-on for FCL import and export: live AIS position, rule-based ETA, email-derived proposals that a staff member approves before anything changes. |
 | **[challange-C](https://github.com/lengominhhuy510-maker/challange-C)** | If one model answers a question badly, does asking several models and letting them check each other help? Built a multi-agent pipeline for multiple-choice answering that works offline, with retrieval-augmented generation and a degraded mode for when the knowledge base has nothing useful. |
-| **[RTCF](https://github.com/lengominhhuy510-maker/RTCF)** | A purchasing simulation handed me a set of results and I wanted to know two things: could the calculation run itself instead of being worked by hand, and was the answer actually the best one or just the first one that worked? Rebuilt the KPI engine to compute automatically, then used Optuna to search the purchasing configuration space for a better result. |
+| **[RTCF](https://github.com/lengominhhuy510-maker/RTCF)** | A supply chain simulation handed me a set of results and I wanted to know two things: could the calculation run itself instead of being worked by hand, and was the answer actually the best one or just the first one that worked? Rebuilt the KPI engine to compute automatically, then used Optuna to search the configuration space for a better result. |
 
 ---
 
@@ -30,7 +30,7 @@ Every project above started from one of these, not from a technology choice.
 - **What is the real unit of work here?** A shipment is not one object; it is a booking, a container, a vessel, a voyage, a set of milestones, and a stream of carrier notices that each change on a different schedule. Getting that boundary wrong makes everything downstream wrong.
 - **Which part can a machine decide, and which part must a person decide?** A system can compute an arrival estimate and read an email. It cannot accept the operational consequence of being wrong. So proposals get generated automatically and approved by a human — the audit trail stays intact either way.
 - **If this automation is wrong, who finds out?** An email parser that misreads a rollover notice is worse than no parser, because it looks authoritative. Every automated output needs a visible source, a confidence, and a way back, and the person who approves it has to be able to see why it fired.
-- **Is this the best answer, or just the first one that ran?** The purchasing project ended with a working calculation, which was not the same as a good one. Search the space before calling it done.
+- **Is this the best answer, or just the first one that ran?** The supply chain simulation ended with a working calculation, which was not the same as a good one. Search the space before calling it done.
 
 ---
 
