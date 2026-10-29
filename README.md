@@ -1,4 +1,4 @@
-# Nguyen Minh Huy
+# Le Ngo Minh Huy
 
 **Supply chain operations · AI automation · Process analysis**
 
