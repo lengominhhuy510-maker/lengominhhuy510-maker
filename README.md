@@ -1,41 +1,46 @@
 # Le Ngo Minh Huy
 
-**Supply chain operations · AI automation · Process analysis**
+**Final-year Logistics and Supply Chain Management**
 
 <a href="https://github.com/lengominhhuy510-maker/Tracking-Shipment-webapp">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=22&pause=1200&color=2563EB&width=620&lines=Post-sales+shipment+monitoring+for+FCL+freight;Rule-based+ETA+with+AIS+and+tide+data;Human-in-the-loop+proposal+review;Process+analysis+%E2%86%92+system+design+%E2%86%92+delivery" alt="Focus areas" />
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=22&pause=1200&color=2563EB&width=680&lines=Exploring+AI+automation+in+supply+chain+operations;Asking+what+can+be+automated+and+what+must+stay+human;Turning+manual+lookup+work+into+system+logic;Not+an+expert+yet+%E2%80%94+reading%2C+building%2C+checking" alt="Focus areas" />
 </a>
 
 ---
 
-## What I work on
+## What I'm exploring
 
-Operations problems in freight forwarding, translated into working software. The recurring pattern: data scattered across carrier portals, vessel feeds, weather services, and email inboxes, with customer service left to answer questions after the fact.
+Logistics and supply chain is the domain; AI automation is the thing I keep coming back to. The question that holds my attention: inside a routine operational process, which parts are only manual because nobody has modelled them yet, and which parts genuinely need a person to decide.
 
-| Project | Scope | Stack |
-|---|---|---|
-| **[Tracking-Shipment-webapp](https://github.com/lengominhhuy510-maker/Tracking-Shipment-webapp)** | Post-sales monitoring add-on for FCL import and export. Live AIS tracking, two-tier rule-based ETA, email-derived proposals requiring staff approval. 10 data models, 5 containerized services, 39 backend test suites. | FastAPI · React · PostgreSQL · Playwright · Docker |
-| **[challange-C](https://github.com/lengominhhuy510-maker/challange-C)** | Hackaithon 2026, Innovator track. Multi-agent LLM answering multi-subject multiple-choice questions offline. Role-based pipeline, RAG with dual-mode degradation. | AutoGen2 · BGE-M3 · FAISS · Docker |
-| **[RTCF](https://github.com/lengominhhuy510-maker/RTCF)** | VSCC 2026 business case. KPI dashboard and purchasing simulation for a synthetic retail dataset. | R · R Markdown |
+Not an expert in either. Still reading, still building small things, still checking my own conclusions against what the process actually does.
 
----
-
-## How I approach a problem
-
-1. **Measure the current process** — timed observation, inquiry volume, where the delay actually originates.
-2. **Separate the decision from the data** — what must a person decide, and what can a system determine.
-3. **Automate the determination, not the decision** — proposals reach a human for approval; the audit trail stays intact.
-4. **Prove it offline** — deterministic tests before any live external service is involved.
+| Project | The question behind it |
+|---|---|
+| **[Tracking-Shipment-webapp](https://github.com/lengominhhuy510-maker/Tracking-Shipment-webapp)** | Manual shipment lookup took 11.2 minutes per container, measured with a stopwatch across four to five separate sources. Can live vessel tracking plus AI-read carrier emails bring that under one minute, without letting a machine overwrite an operational record unsupervised? Built as a post-sales monitoring add-on for FCL import and export: live AIS position, rule-based ETA, email-derived proposals that a staff member approves before anything changes. |
+| **[challange-C](https://github.com/lengominhhuy510-maker/challange-C)** | If one model answers a question badly, does asking several models and letting them check each other help? Built a multi-agent pipeline for multiple-choice answering that works offline, with retrieval-augmented generation and a degraded mode for when the knowledge base has nothing useful. |
+| **[RTCF](https://github.com/lengominhhuy510-maker/RTCF)** | A purchasing simulation handed me a set of results and I wanted to know two things: could the calculation run itself instead of being worked by hand, and was the answer actually the best one or just the first one that worked? Rebuilt the KPI engine to compute automatically, then used Optuna to search the purchasing configuration space for a better result. |
 
 ---
 
-## Skills
+## Questions I keep asking
 
-**Supply chain** — FCL import and export operations · Incoterms E/F and C/D · post-sales customer care · process mapping · operational KPI analysis
+Every project above started from one of these, not from a technology choice.
 
-**AI automation** — multi-agent orchestration · RAG pipelines · LLM extraction with validation · human-in-the-loop design · task decomposition for AI-assisted development
+- **Where does the time actually go?** Before changing a process, measure it. The 11.2 minutes in the shipment project came from timing each lookup step separately, not from asking people how long it felt.
+- **What is the real unit of work here?** A shipment is not one object; it is a booking, a container, a vessel, a voyage, a set of milestones, and a stream of carrier notices that each change on a different schedule. Getting that boundary wrong makes everything downstream wrong.
+- **Which decision belongs to the system and which belongs to a person?** A system can compute an arrival estimate and read an email. It cannot accept the operational consequence of being wrong. So proposals get generated automatically and approved by a human — the audit trail stays intact either way.
+- **What happens when this is confidently wrong?** An email parser that misreads a rollover notice is worse than no parser, because it looks authoritative. Every automated output needs a visible source, a confidence, and a way back.
+- **Is this the best answer or just the first answer?** The purchasing project ended with a working calculation, which was not the same as a good one. Search the space before calling it done.
 
-**Engineering** — Python · FastAPI · SQLAlchemy · PostgreSQL · React · TypeScript · Docker Compose · Playwright · R
+---
+
+## Where I've used these
+
+**Domain** — FCL import and export operations · Incoterms groups E/F and C/D · post-sales customer care · process mapping · operational time measurement
+
+**Working with AI** — multi-agent orchestration · retrieval-augmented generation · structured extraction from email with validation · human-in-the-loop design · task decomposition when building with AI assistance
+
+**Tools I've picked up** — Python · FastAPI · SQLAlchemy · PostgreSQL · React · TypeScript · Docker Compose · Playwright · R
 
 ---
 
