@@ -26,11 +26,11 @@ Not an expert in either. Still reading, still building small things, still check
 
 Every project above started from one of these, not from a technology choice.
 
-- **Where does the time actually go?** Before changing a process, measure it. The 11.2 minutes in the shipment project came from timing each lookup step separately, not from asking people how long it felt.
+- **Which step in this process costs the most time?** Before changing a process, measure it. The 11.2 minutes in the shipment project came from timing each lookup step separately, not from asking people how long it felt. The expensive step turned out to be switching between sources and retyping the same container number, not the lookup itself.
 - **What is the real unit of work here?** A shipment is not one object; it is a booking, a container, a vessel, a voyage, a set of milestones, and a stream of carrier notices that each change on a different schedule. Getting that boundary wrong makes everything downstream wrong.
-- **Which decision belongs to the system and which belongs to a person?** A system can compute an arrival estimate and read an email. It cannot accept the operational consequence of being wrong. So proposals get generated automatically and approved by a human — the audit trail stays intact either way.
-- **What happens when this is confidently wrong?** An email parser that misreads a rollover notice is worse than no parser, because it looks authoritative. Every automated output needs a visible source, a confidence, and a way back.
-- **Is this the best answer or just the first answer?** The purchasing project ended with a working calculation, which was not the same as a good one. Search the space before calling it done.
+- **Which part can a machine decide, and which part must a person decide?** A system can compute an arrival estimate and read an email. It cannot accept the operational consequence of being wrong. So proposals get generated automatically and approved by a human — the audit trail stays intact either way.
+- **If this automation is wrong, who finds out?** An email parser that misreads a rollover notice is worse than no parser, because it looks authoritative. Every automated output needs a visible source, a confidence, and a way back, and the person who approves it has to be able to see why it fired.
+- **Is this the best answer, or just the first one that ran?** The purchasing project ended with a working calculation, which was not the same as a good one. Search the space before calling it done.
 
 ---
 
