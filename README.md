@@ -2,7 +2,7 @@
 
 **Final-year Logistics and Supply Chain Management**
 
-<a href="https://github.com/lengominhhuy510-maker/Tracking-Shipment-webapp">
+<a href="https://github.com/minhyss/Tracking-Shipment-webapp">
   <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=22&pause=1200&color=2563EB&width=680&lines=Interested+in+digital+supply+chain;Applying+AI+automation+to+everyday+operations;Build+first%2C+refine+later;Life+by+trying" alt="Focus areas" />
 </a>
 
@@ -16,9 +16,9 @@ Not an expert in either. Still reading, still building small things, still check
 
 | Project | The question behind it |
 |---|---|
-| **[Tracking-Shipment-webapp](https://github.com/lengominhhuy510-maker/Tracking-Shipment-webapp)** | Manual shipment lookup took 11.2 minutes per container, measured with a stopwatch across four to five separate sources. Can live vessel tracking plus AI-read carrier emails bring that under one minute, without letting a machine overwrite an operational record unsupervised? Built as a post-sales monitoring add-on for FCL import and export: live AIS position, rule-based ETA, email-derived proposals that a staff member approves before anything changes. |
-| **[challange-C](https://github.com/lengominhhuy510-maker/challange-C)** | If one model answers a question badly, does asking several models and letting them check each other help? Built a multi-agent pipeline for multiple-choice answering that works offline, with retrieval-augmented generation and a degraded mode for when the knowledge base has nothing useful. |
-| **[RTCF](https://github.com/lengominhhuy510-maker/RTCF)** | A supply chain simulation handed me a set of results and I wanted to know two things: could the calculation run itself instead of being worked by hand, and was the answer actually the best one or just the first one that worked? Rebuilt the KPI engine to compute automatically, then used Optuna to search the configuration space for a better result. |
+| **[Tracking-Shipment-webapp](https://github.com/minhyss/Tracking-Shipment-webapp)** | Manual shipment lookup took 11.2 minutes per container, measured with a stopwatch across four to five separate sources. Can live vessel tracking plus AI-read carrier emails bring that under one minute, without letting a machine overwrite an operational record unsupervised? Built as a post-sales monitoring add-on for FCL import and export: live AIS position, rule-based ETA, email-derived proposals that a staff member approves before anything changes. |
+| **[challange-C](https://github.com/minhyss/challange-C)** | If one model answers a question badly, does asking several models and letting them check each other help? Built a multi-agent pipeline for multiple-choice answering that works offline, with retrieval-augmented generation and a degraded mode for when the knowledge base has nothing useful. |
+| **[RTCF](https://github.com/minhyss/RTCF)** | A supply chain simulation handed me a set of results and I wanted to know two things: could the calculation run itself instead of being worked by hand, and was the answer actually the best one or just the first one that worked? Rebuilt the KPI engine to compute automatically, then used Optuna to search the configuration space for a better result. |
 
 ---
 
@@ -47,12 +47,12 @@ Every project above started from one of these, not from a technology choice.
 ## Contact
 
 [![Email](https://img.shields.io/badge/Email-lengominhhuy510@gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:lengominhhuy510@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-lengominhhuy510--maker-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/lengominhhuy510-maker)
+[![GitHub](https://img.shields.io/badge/GitHub-minhyss-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/minhyss)
 
 ---
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lengominhhuy510-maker/lengominhhuy510-maker/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lengominhhuy510-maker/lengominhhuy510-maker/output/github-contribution-grid-snake.svg" />
-  <img alt="Contribution graph" src="https://raw.githubusercontent.com/lengominhhuy510-maker/lengominhhuy510-maker/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/minhyss/minhyss/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/minhyss/minhyss/output/github-contribution-grid-snake.svg" />
+  <img alt="Contribution graph" src="https://raw.githubusercontent.com/minhyss/minhyss/output/github-contribution-grid-snake.svg" />
 </picture>
